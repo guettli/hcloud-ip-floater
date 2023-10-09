@@ -19,13 +19,13 @@ following `kustomization.yaml`:
 ```yaml
 namespace: hcloud-ip-floater
 bases:
-  - github.com/costela/hcloud-ip-floater/deploy?ref=v0.1.5
+  - github.com/costela/hcloud-ip-floater/deploy?ref=v0.1.6
 secretGenerator:
   - name: hcloud-ip-floater-secret-env
     literals:
       - HCLOUD_IP_FLOATER_HCLOUD_TOKEN=<YOUR HCLOUD API TOKEN HERE>
 ```
-
+.1.5
 The provided deployment manifest expects a secret named `hcloud-ip-floater-secret-env` to exist, which is the
 recommended location for storing the hcloud API token.
 
